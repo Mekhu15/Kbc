@@ -1,0 +1,77 @@
+[
+  {
+    "id": 14,
+    "title": "15-Rs. 1 crore",
+    "color": "blue"
+  },
+  {
+    "id": 13,
+    "title": "14 - Rs. 50,00,000",
+    "color": "blue"
+  },
+  {
+    "id": 12,
+    "title": "13-Rs. 25,00,000",
+    "color": "blue"
+  },
+  {
+    "id": 11,
+    "title": "12-Rs. 12,50,000",
+    "color": "blue"
+  },
+  {
+    "id": 10,
+    "title": "11-Rs. 6,25,000",
+    "color": "blue"
+  },
+  {
+    "id": 9,
+    "title": "10-Rs. 3,20,000",
+    "color": "blue"
+  },
+  {
+    "id": 8,
+    "title": "9-Rs. 1,60,000",
+    "color": "blue"
+  },
+  {
+    "id": 7,
+    "title": "8-Rs. 80,000",
+    "color": "blue"
+  },
+  {
+    "id": 6,
+    "title": "7-Rs. 40,000",
+    "color": "blue"
+  },
+  {
+    "id": 5,
+    "title": "6-Rs. 20,000",
+    "color": "blue"
+  },
+  {
+    "id": 4,
+    "title": "5-Rs. 10,000",
+    "color": "blue"
+  },
+  {
+    "id": 3,
+    "title": "4-Rs. 5000",
+    "color": "blue"
+  },
+  {
+    "id": 2,
+    "title": "3-Rs. 3000",
+    "color": "blue"
+  },
+  {
+    "id": 1,
+    "title": "2-Rs. 2000",
+    "color": "blue"
+  },
+  {
+    "id": 0,
+    "title": "1-Rs. 1000",
+    "color": "blue"
+  }
+]

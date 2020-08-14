@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header {
+  width: 100%;
+  height: 40px;
+  background-color: #acb8ec;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.header span {
+  font-weight: bold;
+}
+
+.kbc {
+  font-size: 3.5vw;
+  color: blue;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150vh;
+  margin: auto;
+}
+
+.flex-container > div {
+  background-color: blue;
+  width: 23vh;
+  line-height: 6vh;
+  margin: 5px;
+  text-align: center;
+  font-size: 2.5vh;
+  color: white;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.optionsContainer > div {
+  margin: 5px;
+  text-align: center;
+}
+
+.optionsContainer > div > button {
+  background-color: white;
+  margin: 15px;
+  color: blue;
+  width: 50vh;
+  height: 7vh;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
+.next {
+  background-color: white;
+  color: blue;
+  width: 40vh;
+  height: 6vh;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
+.timer {
+  float: right;
+  border: 1px solid red;
+  color: white;
+  background-color: red;
+  margin-right: 50px;
+  font-size: 3vh;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+.highlight {
+  border: 2px dashed green;
+  width: 500px;
+  margin: auto;
+  height: 30px;
+  color: green;
+}
+
+.lifeline > button {
+  background-color: darkolivegreen;
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  margin: 10px;
+}
+.name {
+  position: sticky;
+  top: 0;
+}
