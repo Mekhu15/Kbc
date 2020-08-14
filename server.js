@@ -36,23 +36,18 @@ app.get("/board", (req, res) => {
   });
 });
 
-app.get("/name/add", (req, res) => {
+app.post("/name/add", (req, res) => {
   var { name, prize, time } = req.body;
-  const insertQuery =
-    "INSERT INTO kbc_game (NAME,Prize,Time) VALUES ('" +
-    mysql.escape(name) +
-    "'," +
-    mysql.escape(prize) +
-    "," +
-    mysql.escape(time) +
-    ")";
-  connection.query(insertQuery, (err, results) => {
+  const insertQuery = "insert into kbc_game (name,prize,time) values (?,?,?) ";
+  let queeryParams = [name, prize, time];
+  connection.query(insertQuery, queeryParams, (err, results) => {
     if (err) {
       return res.send(err);
     } else {
       return res.send("Successfully added product");
     }
   });
+  // return res.send(req.body);
 });
 
 // app.get("/name/add", (req, res) => {
@@ -67,17 +62,17 @@ app.get("/name/add", (req, res) => {
 //   });
 // });
 
-app.post("/name/add", function (req, res) {
-  var postData = req.body;
-  connection.query(
-    "INSERT INTO kbc_game (NAME,PRIZE,Time) SET ?",
-    postData,
-    function (error, results, fields) {
-      if (error) throw error;
-      res.end(JSON.stringify(results));
-    }
-  );
-});
+// app.post("/name/add", function (req, res) {
+//   var postData = req.body;
+//   connection.query(
+//     "INSERT INTO kbc_game (NAME,PRIZE,Time) SET ?("")",
+//     postData,
+//     function (error, results, fields) {
+//       if (error) throw error;
+//       res.end(JSON.stringify(results));
+//     }
+//   );
+// });
 
 app.listen(process.env.PORT || 8080, () =>
   console.log("Express server is runnig at port no : 8080")
