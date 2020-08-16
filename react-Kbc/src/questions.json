@@ -16,7 +16,8 @@
           "option": "Suresh Prabhu"
         }
       ],
-      "answer": "Narendra Modi"
+      "answer": "Narendra Modi",
+      "wrong": "Mamta Banerjee"
     },
     {
       "question": "In which movie did Hrithik Roshan played the character of a thief ?",
@@ -34,7 +35,8 @@
           "option": "Naksha"
         }
       ],
-      "answer": "Dhoom 2"
+      "answer": "Dhoom 2",
+      "wrong": "Dhoom"
     },
     {
       "question": "What is the full form of HTML ?",
@@ -52,7 +54,8 @@
           "option": "HyperText Markup Language"
         }
       ],
-      "answer": "HyperText Markup Language"
+      "answer": "HyperText Markup Language",
+      "wrong": "HyperTest Marking Language"
     },
     {
       "question": "Which of these sounds would you associate with the heart ?",
@@ -70,7 +73,8 @@
           "option": "Dhak Dhak"
         }
       ],
-      "answer": "Dhak Dhak"
+      "answer": "Dhak Dhak",
+      "wrong": "Tap Tap"
     },
     {
       "question": "In the Ramayana, Which demon impersonated Rama's voice, screaming, 'Lakshman! Help me' ?",
@@ -88,7 +92,8 @@
           "option": "Surpanakha"
         }
       ],
-      "answer": "Maricha"
+      "answer": "Maricha",
+      "wrong": "Surpanakha"
     },
     {
       "question": "With Which of these cards would you associate the phrase 'Aam Aadmi ka Adhikaar' ?",
@@ -130,19 +135,20 @@
       "question": "What is your relation with your grandmother's granddaughter ?",
       "options": [
         {
-          "option": "Chachi"
+          "option": "Aunty"
         },
         {
-          "option": "Mata"
+          "option": "Mother"
         },
         {
-          "option": "Bahan"
+          "option": "Sister"
         },
         {
           "option": "Bua"
         }
       ],
-      "answer": "Bahan"
+      "answer": "Sister",
+      "wrong": "Bua"
     },
     {
       "question": "Which animal is offered milk on 'Naga Panchami' ?",
@@ -216,7 +222,8 @@
           "option": "Ashoka"
         }
       ],
-      "answer": "Maharana Pratap"
+      "answer": "Maharana Pratap",
+      "wrong": "Ashoka"
     },
     {
       "question": "In 2013, where did the natural calamity known as Himalayan tsunami occur ?",
@@ -234,7 +241,8 @@
           "option": "Sikkim"
         }
       ],
-      "answer": "Uttrakhand"
+      "answer": "Uttrakhand",
+      "wrong": "Jammu and Kashmir"
     },
     {
       "question": "Poplin, Rubiya and flannel are types of what ?",
@@ -252,7 +260,8 @@
           "option": "Rubber"
         }
       ],
-      "answer": "Fabrics"
+      "answer": "Fabrics",
+      "wrong": "Rubber"
     },
     {
       "question": "On the bank of which of these rivers is a Union Territory located ?",
@@ -270,7 +279,8 @@
           "option": "Ganga"
         }
       ],
-      "answer": "Yamuna"
+      "answer": "Yamuna",
+      "wrong": "Ganga"
     },
     {
       "question": "Which of these animals has branched horns ?",
@@ -288,7 +298,8 @@
           "option": "Rhinocerous"
         }
       ],
-      "answer": "Barasingha"
+      "answer": "Barasingha",
+      "wrong": "Musk Deer"
     },
     {
       "question": "Which part of the eye is stored in eye banks for transplant ?",
@@ -342,7 +353,8 @@
           "option": "Coca-Cola"
         }
       ],
-      "answer": "Campa Cola"
+      "answer": "Campa Cola",
+      "wrong": "Coca-Cola"
     },
     {
       "question": "The sign for which mathematical function is also logo of the Red Cross Society ?",
@@ -506,7 +518,8 @@
           "option": "Pete Conrad"
         }
       ],
-      "answer": "James A Lovell"
+      "answer": "James A Lovell",
+      "wrong": "Charles Dule"
     },
     {
       "question": "Who was the chairman of the Indian Calendar Reform Committee that initiated the adoption of Saka calendar as the Indian national Calendar ?",
@@ -524,7 +537,8 @@
           "option": "Vainu Bappu"
         }
       ],
-      "answer": "Meghnad Saha"
+      "answer": "Meghnad Saha",
+      "wrong": "Subrahmanyan Chandrasekhar"
     },
     {
       "question": "Which of these writers is better known as 'Shivani' in the literary world ?",
@@ -542,7 +556,8 @@
           "option": "Gaura Pant"
         }
       ],
-      "answer": "Gaura Pant"
+      "answer": "Gaura Pant",
+      "wrong": "Ira Pande"
     },
     {
       "question": "In notes printed by the RBI after 1948, which language in the language panel was substituted with Oriya ?",
@@ -560,7 +575,8 @@
           "option": "Burmese"
         }
       ],
-      "answer": "Burmese"
+      "answer": "Burmese",
+      "wrong": "Nepali"
     },
     {
       "question": "Who is the founder of Patna's famous Super 30 Institute that coaches economically backward students for IIT-JEE ?",
@@ -578,7 +594,8 @@
           "option": "Anurag Anand"
         }
       ],
-      "answer": "Anand Kumar"
+      "answer": "Anand Kumar",
+      "wrong": "Nitish Kumar"
     },
     {
       "question": "Which ancient king got the title of Ashwamedha-Parakarmah after performing the 'Ashwamesha Yajna' ?",
@@ -632,7 +649,8 @@
           "option": "Kelucharan Mohapatra"
         }
       ],
-      "answer": "Uday Shankar"
+      "answer": "Uday Shankar",
+      "wrong": "Shambhu Maharaj"
     },
     {
       "question": "28 Aug 2013 marked the 50th anniversary of the historic 'I have a dream' speech of which leader ?",

@@ -1,51 +1,3 @@
-// import React from "react";
-// import "./index.css";
-
-// // const result = (props) => {
-// //   constructor(props);
-// //   {
-// //     super(props);
-// //     this.state = {
-// //       name: props.username,
-// //       score: props.score,
-// //       time: 20,
-// //     };
-// //   }
-// //   componentDidMount() {
-// //     this.addData();
-// //   }
-
-// //   addData = () => {
-// //     var data = {
-// //       name: this.state.name,
-// //       score: this.state.email,
-// //       time: this.state.time,
-// //     };
-// //     console.log(data);
-// //     fetch("/name/add", {
-// //       method: "GET",
-// //       headers: { "Content-Type": "application/json" },
-// //       body: JSON.stringify(data),
-// //     })
-// //       .then(function (response) {
-// //         if (response.status >= 400) {
-// //           throw new Error("Bad response from server");
-// //         }
-// //         return response.json();
-// //       })
-// //       .then(function (data) {
-// //         console.log(data);
-// //         if (data == "success") {
-// //           this.setState({ msg: "Thanks for registering" });
-// //         }
-// //       })
-// //       .catch(function (err) {
-// //         console.log(err);
-// //       });
-// //   };
-// //   return <div>You won:Rs.{this.state.score}</div>;
-// // };
-// // export default result;
 import React, { Component } from "react";
 import axios from "axios";
 export default class Result extends Component {
@@ -57,15 +9,33 @@ export default class Result extends Component {
       score1: props.score1,
       score2: props.score2,
       time: 20,
+      count: props.count,
+      option: props.option,
+      quit: props.quit,
+      finalScore: 0,
+      count1: 0,
+      count2: props.count,
     };
   }
 
   addData = () => {
+    var final = 0;
+    var d = new Date();
+    var n = d.getSeconds();
+    this.setState({
+      count1: n,
+    });
+    if (this.state.score1 === undefined && this.state.score2 === undefined)
+      final = this.state.score;
+    else if (this.state.score1 === undefined && this.state.score === undefined)
+      final = this.state.score2;
+    else if (this.state.score === undefined && this.state.score2 === undefined)
+      final = this.state.score1;
     axios
       .post("/name/add", {
         name: this.state.name,
-        score: this.state.score,
-        time: this.state.time,
+        prize: final,
+        time: this.state.count1,
       })
       .then(() => {
         console.log("Data has been sent to the server");
@@ -75,9 +45,24 @@ export default class Result extends Component {
       });
   };
   render() {
+    // var finalScore = this.state.score + this.state.score1 + this.state.score2;
+    let text = "";
+    if (this.state.count === 0) text = "Your time is up!!";
+    else if (this.state.option) text = "You Loose on this Question";
+    else if (this.state.quit) text = "You Quit this game";
+    // else text = "Congatulations!!!";
     return (
       <div>
-        <button onClick={this.addData}>Hello</button>
+        <div>
+          <p>{text}</p>
+          <p>
+            You Won Rs.{this.state.score}
+            {this.state.score1} {this.state.score2}
+          </p>
+        </div>
+        <button className="save" onClick={this.addData}>
+          Save the Game
+        </button>
       </div>
     );
   }

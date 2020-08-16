@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Game from "./Game";
 import GoogleLogin from "react-google-login";
-import History from "./History";
 export default class User extends Component {
   constructor(props) {
     super(props);
@@ -45,7 +44,6 @@ export default class User extends Component {
 
     return (
       <div>
-        <History />
         <div className="container">
           <div className="home">
             <h1>
@@ -61,8 +59,9 @@ export default class User extends Component {
             <br />
             <br />
             <GoogleLogin
+              className="google"
               clientId="826813629504-kg9qb57sthjubjsdamj9fk7lafuola66.apps.googleusercontent.com"
-              buttonText="Login"
+              buttonText="Login with Google"
               onSuccess={responseGoogle}
               onFailure={responseGoogle}
               cookiePolicy={"single_host_origin"}
